@@ -4,25 +4,77 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: block;
     margin: 1px;
-
 }
+
 body{
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,101,133,1) 0%, rgba(255,211,165,1) 90% );
 }
-.menu-burger{
-    text-align: right;
+
+.name{
+    position: fixed;
 }
 
-#menu{
+.menu{
+    margin-left: 70%;
+    margin-top: -10px;
     text-align: right;
+    position: fixed;
+
+}
+.menu-btn{
+    width: 5em;
+    height: 2em;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+.menu-content{
+    right: 0px;
+    top: 30px;
+    display: none;
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 10em;
+    height: 30em;
+
 }
 
 .tiles article{
     display: inline-block;
     width: min-content;
     margin-left: 30px;
+    position: relative;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.title-tile{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    background-color: rgba(0, 0, 0, 20%);
+    padding: 2em;
+}
+.link-to-image{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    
+}
+
+.image:hover + .link-to-image{
+    visibility: visible;
+    opacity: 1;
+}
+
+.link-to-image:hover{
+    visibility: visible;
+    opacity: 1;
+}
 header{
     margin: auto;
     width: 50%;
