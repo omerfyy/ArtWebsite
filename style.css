@@ -14,19 +14,39 @@ body{
     position: fixed;
 }
 
-.menu{
-    margin-left: 70%;
-    margin-top: -10px;
-    text-align: right;
-    position: fixed;
 
-}
+
+
 .menu-btn{
     width: 5em;
     height: 2em;
     background: none;
     border: none;
-    font-size: 20px;
+    position: fixed;
+    display: block;
+    right: 2px;
+
+}
+
+.menu-btn:hover{
+    cursor: pointer;
+}
+.burger-line{
+    margin: 8px;
+    width: 50px;
+    border-color: black;
+}
+.close-btn{
+    text-align: center;
+    padding-right: 10px;
+    height: 60px;
+    background: black;
+    color: white;
+    font-size: 50px;
+    
+}
+.close-btn:hover{
+    cursor: pointer;
 }
 .menu-content{
     right: 0px;
@@ -37,6 +57,7 @@ body{
     background-color: rgba(0, 0, 0, 0.3);
     width: 10em;
     height: 30em;
+    top: 0px;
 
 }
 

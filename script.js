@@ -7,4 +7,11 @@ dropdownBtn.addEventListener('click',()=>{
    } else {
       menuContent.style.display="";
    }
-})
+});
+
+let closeBtn = document.querySelector('.close-btn');
+closeBtn.addEventListener('click',() =>{
+    if(menuContent.style.display==="block"){
+        menuContent.style.display="";
+    };
+});
